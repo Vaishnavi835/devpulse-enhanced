@@ -25,7 +25,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/developers')
+    fetch('/api/developers')
       .then(r => r.json())
       .then(data => { setDevelopers(data); if (data.length > 0) setSelectedDev(data[0].id); });
   }, []);
@@ -33,7 +33,7 @@ export default function App() {
   useEffect(() => {
     if (!selectedDev) return;
     setLoading(true);
-    fetch(`http://localhost:3001/api/metrics/${selectedDev}`)
+    fetch(`/api/metrics/${selectedDev}`)
       .then(r => r.json())
       .then(data => {
         setAllMetrics(data);

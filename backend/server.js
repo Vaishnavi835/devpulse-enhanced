@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const metricsData = require('./metrics.json');
 const managersData = require('./managers.json');
@@ -121,6 +122,14 @@ app.get('/api/metrics/:developerId', (req, res) => {
   });
 
   res.json(interpretations);
+});
+
+// Serve static files from the frontend/dist directory
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+// Catch-all route to serve the frontend index.html for SPA support
+app.get('*all', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 const PORT = process.env.PORT || 3001;

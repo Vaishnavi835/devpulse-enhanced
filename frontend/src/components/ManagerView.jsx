@@ -7,7 +7,7 @@ export default function ManagerView() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/managers')
+    fetch('/api/managers')
       .then(r => r.json())
       .then(data => { setManagers(data); if (data.length > 0) setSelectedManager(data[0].id); });
   }, []);
@@ -15,7 +15,7 @@ export default function ManagerView() {
   useEffect(() => {
     if (!selectedManager) return;
     setLoading(true);
-    fetch(`http://localhost:3001/api/managers/${selectedManager}`)
+    fetch(`/api/managers/${selectedManager}`)
       .then(r => r.json())
       .then(data => { setManagerData(data); setLoading(false); });
   }, [selectedManager]);
