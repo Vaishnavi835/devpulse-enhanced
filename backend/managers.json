@@ -1,0 +1,8 @@
+[
+  { "manager_id": "MGR-01", "manager_name": "Rina Kapoor", "month": "2026-03", "team_size": 3, "avg_lead_time_days": 3.0, "avg_cycle_time_days": 4.5, "avg_bug_rate_pct": 0.0, "signal": "Healthy flow" },
+  { "manager_id": "MGR-01", "manager_name": "Rina Kapoor", "month": "2026-04", "team_size": 3, "avg_lead_time_days": 3.2, "avg_cycle_time_days": 4.3, "avg_bug_rate_pct": 33.3, "signal": "Watch bottlenecks" },
+  { "manager_id": "MGR-02", "manager_name": "Samir Gupta", "month": "2026-03", "team_size": 3, "avg_lead_time_days": 3.0, "avg_cycle_time_days": 3.9, "avg_bug_rate_pct": 16.7, "signal": "Watch bottlenecks" },
+  { "manager_id": "MGR-02", "manager_name": "Samir Gupta", "month": "2026-04", "team_size": 3, "avg_lead_time_days": 3.3, "avg_cycle_time_days": 3.5, "avg_bug_rate_pct": 16.7, "signal": "Watch bottlenecks" },
+  { "manager_id": "MGR-03", "manager_name": "Priya Nair", "month": "2026-03", "team_size": 2, "avg_lead_time_days": 4.6, "avg_cycle_time_days": 5.3, "avg_bug_rate_pct": 50.0, "signal": "Watch bottlenecks" },
+  { "manager_id": "MGR-03", "manager_name": "Priya Nair", "month": "2026-04", "team_size": 2, "avg_lead_time_days": 4.2, "avg_cycle_time_days": 5.7, "avg_bug_rate_pct": 0.0, "signal": "Healthy flow" }
+]
